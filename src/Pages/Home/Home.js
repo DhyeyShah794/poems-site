@@ -24,9 +24,6 @@ class Home extends Component {
     <h1 style={{paddingTop: '100px', textAlign: 'center'}}>Loading</h1> :
     (
       <div>
-        
-        {/* <Quotes />
-        <Info /> */}
         <CardList robots={robots} />
       </div>
     )

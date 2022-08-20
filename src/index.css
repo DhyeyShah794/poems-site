@@ -35,9 +35,7 @@ code {
 }
 
 .Quotes {
-  /* background-image:url(img4.1.jpg) !important; */
   background-image: url('./Components/Images/img7.jpg') !important;
-  /* background: #000; */
 	background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;

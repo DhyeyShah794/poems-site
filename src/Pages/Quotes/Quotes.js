@@ -6584,10 +6584,13 @@ const Quotes = () => {
   }
 
   const copyText = () => {
-    const text = document.getElementById('Quote-Text').innerText + ' ' + document.getElementById('Quote-Author').innerText;
-    console.log(text);
-    navigator.clipboard.writeText(text);
-    console.log("Copied text");
+    var text = document.getElementById('Quote-Text').innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
   }
   return (
     <div className="Quotes">
@@ -6616,11 +6619,6 @@ const Quotes = () => {
           <button className="btn" onClick={copyText}>Copy Quote</button>
         </div>
       </ div>
-
-
-
-
-
     </div>
   );
 }

@@ -33,7 +33,6 @@
 }
 
 #Quote-Text {
-    /* position: absolute; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +50,6 @@
     animation: flicker 1s ease-in-out infinite alternate;
 }
 #Quote-Author {
-    /* position: absolute; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,7 +63,6 @@
     0 0 20px #9C9C9C, 0 0 40px #9C9C9C;
 }
 .Buttons {
-    /* position: absolute; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
