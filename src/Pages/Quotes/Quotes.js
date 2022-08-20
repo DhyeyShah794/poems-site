@@ -6584,7 +6584,7 @@ const Quotes = () => {
   }
 
   const copyText = () => {
-    var text = document.getElementById('Quote-Text').innerText;
+    var text = `${document.getElementById('Quote-Text').innerText}\n ${document.getElementById('Quote-Author').innerText}`;
     var elem = document.createElement("textarea");
     document.body.appendChild(elem);
     elem.value = text;
@@ -6594,7 +6594,6 @@ const Quotes = () => {
   }
   return (
     <div className="Quotes">
-
       <div className="firefly"></div>
       <div className="firefly"></div>
       <div className="firefly"></div>
