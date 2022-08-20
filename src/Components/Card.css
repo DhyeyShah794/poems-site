@@ -1,0 +1,104 @@
+.Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.Card {
+    position: relative;
+    /* top: 50px; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 15px;
+    /* margin-left: 40px; */
+    width: 370px;
+    height: 450px;
+    /* height: 400px; */
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+.Card:hover {
+    background: rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3); */
+    transform:  scale(1.05) translateY(-5px);
+    /* backdrop-filter: blur(4px); */
+    backdrop-filter: blur(0px);
+    
+}
+.Card-top {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    height: 12%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.Card-top:hover {
+    font-weight: 800;
+}
+.filled {
+    position: relative;
+    left: 8%;
+    width: 0px;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    transition: 0.35s ease-out;
+    /* border-radius: 5px 5px 5px 5px; */
+}
+.Card:hover .filled {
+    position: relative;
+    left: 8%;
+    width: 84%; /* adjust according to value of left */
+    background: rgba(255, 255, 255, 1);
+    transition: 0.35s ease-out;
+}
+.Card-text {
+    position: relative;
+    height: 360px;
+    margin-top: 45px;
+    padding-top: 10px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+Card-text:hover {
+    font-weight: 600;
+}
+.Card-text::-webkit-scrollbar {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .Card {
+        width: 320px;
+        /* height: auto; */
+        margin: 0;
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 25px;
+    }
+    /* .Card:hover {
+        transform: scale(1.02);
+    } */
+    .Card-top {
+        height: 10%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    /* .Card-text {
+        height: auto;
+        margin-top: 0;
+        padding-top: 0;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .Card-text::-webkit-scrollbar {
+        display: none;
+    } */
+}
