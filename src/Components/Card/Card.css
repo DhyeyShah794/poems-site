@@ -24,9 +24,7 @@
 }
 .Card:hover {
     background: rgba(0, 0, 0, 0.3);
-    /* box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3); */
     transform:  scale(1.05) translateY(-5px);
-    /* backdrop-filter: blur(4px); */
     backdrop-filter: blur(0px);
     
 }
@@ -62,12 +60,12 @@
     position: relative;
     height: 360px;
     margin-top: 45px;
-    padding-top: 10px;
+    padding-top: 20px;
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-Card-text:hover {
+.Card-text:hover {
     font-weight: 600;
 }
 .Card-text::-webkit-scrollbar {
